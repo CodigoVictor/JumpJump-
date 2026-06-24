@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #edf7ff;
+  color: #17202a;
+}
+
+.app {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.is-active {
+  display: block;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #17202a;
+  background: white;
+}
+
+#drawCanvas {
+  width: 320px;
+  height: 320px;
+  touch-action: none;
+}
+
+#gameCanvas {
+  width: 100%;
+  height: auto;
+  background: #dcefdc;
+}
+
+.controls,
+.hud {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 12px 0;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  background: #0f8b8d;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  padding: 10px 16px;
+  border: 0;
+  background: #0f8b8d;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
