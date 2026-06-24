@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jump!</title>
+</head>
+<body>
+    <main class="app">
+        <section id="drawScreen" class="screen is-active">
+            <h1>Draw you player</h1>
+        </section>
+        <canvas id="drawCanvas" width="320" height="320"> </canvas>
+        <div class="controls">
+            <imput id="colorPicker" type="color" value="#17202a">
+            <input id="brushSize" type="rage" min="4" max="22" value="10" >
+            <button id="clearBtn">Clean</button>
+            <button id="readyBtn">Ready!</button>
+        </div>
+        <section id="gameScreen" class="screen">
+            <div class="hud">
+                <p>Point: <span id="score">0</p>
+                <p>Goal: <span id="bestScore">0</p>
+            </div>
+            <canvas id="gameCanvas" width="900" height="420"></canvas>
+
+            <div class="controls" >
+                <buttton id="jumpBtn">Jump</buttton>
+                <buttton id="restartBtn">Restart</buttton>
+                <buttton id="newRunnerBtn">New Draw</buttton>
+            </div>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
